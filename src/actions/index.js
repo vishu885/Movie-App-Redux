@@ -13,3 +13,11 @@ export  function addMovies(movies){
         movies:movies
     }
 }
+
+export const ADD_FAV="ADD_FAV";
+export  function addFav(movie){
+    return {
+        type:ADD_FAV,
+        movie:movie
+    }
+}
