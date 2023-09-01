@@ -21,3 +21,20 @@ export  function addFav(movie){
         movie:movie
     }
 }
+ 
+export const REMOVE_FAV="REMOVE_FAV";
+export function removeFav(movie)
+{
+    return{
+        type:REMOVE_FAV,
+        movie:movie
+    }
+}
+ export const SWITCH_TABS="SWITCH_TABS";
+ export function switchTabs(val)
+ {
+    return{
+        type:SWITCH_TABS,
+        val
+    }
+ }

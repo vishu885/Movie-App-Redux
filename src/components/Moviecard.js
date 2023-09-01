@@ -1,5 +1,5 @@
 import React from "react";
-import { addFav } from "../actions";
+import { addFav, removeFav } from "../actions";
 class Moviecard extends React.Component {
     handleAddFav=()=>{
       const {movie}=this.props;
@@ -7,7 +7,12 @@ class Moviecard extends React.Component {
       this.props.dispatch(addFav(movie));
     }
 
-    handleRemoveFav=()=>{}
+    handleRemoveFav=()=>{
+      const {movie}=this.props;
+      console.log("MOvie",movie);
+      this.props.dispatch(removeFav(movie));
+
+    }
 
    
     render(){
